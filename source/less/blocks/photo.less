@@ -2,11 +2,32 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.photo__container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .photo__item {
   padding: 20px 0;
   border-bottom: 1px solid @dark-grey;
+  text-align: center;
+}
+
+.photo__item--main {
+
 }
 
 .photo__cover {

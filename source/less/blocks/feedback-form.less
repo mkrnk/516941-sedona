@@ -1,3 +1,32 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__item {
+  width: 100%;
+}
+
+.feedback-form__person {
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
+.feedback-form__impression {
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    order: -1;
+  }
+}
+
 .feedback-form__submit {
   width: 100%;
   height: 60px;
